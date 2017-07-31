@@ -7,11 +7,11 @@ knolkart.com is a new online shopping application with microservices architectur
 4. All features must be in runnable condition.
 5. Flow class/diagram updated in wiki
 6. How to run updated in wiki.
-
+<p>
 1. As an architect, I would like to setup a multi module project using sbt
 a. Have modules inventory, inventory-sdk, checkout-service, notification-service
 b. Have proper package structure.
-
+</p>
 2. As an architect, I would like to access inventory to show search items so that it can be shown in UI or access by analytics.
 Acceptance criteria
  a. List of items with details like description, photos,  vendor information, price.
