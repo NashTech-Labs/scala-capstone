@@ -57,3 +57,5 @@ AC
   <li> d. Accepts the credentials in Map form implicitly. </li>
   </ul>
 </p>
+
+Note: Write mock funcitons in the services which returns fix values
