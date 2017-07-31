@@ -8,36 +8,52 @@ knolkart.com is a new online shopping application with microservices architectur
 5. Flow class/diagram updated in wiki
 6. How to run updated in wiki.
 <p>
-1. As an architect, I would like to setup a multi module project using sbt
-a. Have modules inventory, inventory-sdk, checkout-service, notification-service
-b. Have proper package structure.
+1. As an architect, I would like to setup a multi module project using sbt <br>
+ <AC>
+ <ul>
+  <li>a. Have modules inventory, inventory-sdk, checkout-service, notification-service</li>
+  <li>b. Have proper package structure.</li>
+ </ul>
 </p>
+<p>
 2. As an architect, I would like to access inventory to show search items so that it can be shown in UI or access by analytics.
 Acceptance criteria
- a. List of items with details like description, photos,  vendor information, price.
- b.Takes category, item name and some filter parameter like default, price low to high, price high to low
- c. If filter is not default it must sort them using price.
- d. Returns in a Future.
- e. Accepts the credentials in Map form implicitly.
-
-3. As an architect, I would like to access inventory to get the price info so that it can be use in checkout service or in notification service
+ <ul>
+  <li>a. List of items with details like description, photos,  vendor information, price.</li>
+  <li>b.Takes category, item name and some filter parameter like default, price low to high, price high to low</li>
+  <li>c. If filter is not default it must sort them using price.</li>
+  <li>d. Returns in a Future.</li>
+  <li>e. Accepts the credentials in Map form implicitly.</li>
+ </ul>
+</p>
+<p>
+3. As an architect, I would like to access inventory to get the price info so that it can be use in checkout service or in notification service<br>
 AC
-a. Accepts item id to get the price information
-b. Returns the price object
-c. Returns in a Future
-d. Accepts the credentials in Map form implicitly.
-
-4. As an architect, I would like to use the inventory item and can update the item count. .
+ <ul>
+ <li>a. Accepts item id to get the price information</li>
+ <li>b. Returns the price object</li>
+ <li>c. Returns in a Future</li>
+ <li>d. Accepts the credentials in Map form implicitly.</li>
+ </ul>
+</p>
+<p>
+4. As an architect, I would like to use the inventory item and can update the item count. .<br>
 AC
-a. Accepts item id and number to be reduced.
-b. Returns if it is updated.
-c. It must be a higher order function  e.g. checkout(id: Long, itemCount: Int)(A => B)
-d returns in a Future
-e Accepts the credentials in Map form implicitly.
-
-5. As an architect, I would like add items to inventory from backend service. 
-a. Accepts item information along with number of items available
-b. Returns its id.
-c. Returns in a Future
-d. Accepts the credentials in Map form implicitly.
-
+ <ul>
+  <li>a. Accepts item id and number to be reduced.</li>
+  <li> b. Returns if it is updated.</li>
+  <li> c. It must be a higher order function  e.g. checkout(id: Long, itemCount: Int)(A => B)</li>
+  <li> d returns in a Future</li>
+  <li> e Accepts the credentials in Map form implicitly.</li>
+  </ul>
+</p>
+<p>
+5. As an architect, I would like add items to inventory from backend service. <br>
+ AC
+ <ul>
+  <li>a. Accepts item information along with number of items available</li>
+  <li> b. Returns its id. </li>
+  <li> c. Returns in a Future </li>
+  <li> d. Accepts the credentials in Map form implicitly. </li>
+  </ul>
+</p>
